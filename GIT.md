@@ -20,7 +20,7 @@ git clone --branch <branch> --origin origin --progress -v <URL to Repo>
 ```bash
 git remote rm origin
 ```
-- Remove the files and history for everything except the files and directories specified
+- Remove the files and history for everything except the files and directories specified.  Note as the origin was removed in the previous step the ```--force``` option is required
 ```bash
-git filter-repo --path <path 1> --path <path 2> etc
+git filter-repo --path <path 1> --path <path 2> etc --force
 ```
